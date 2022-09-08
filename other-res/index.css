@@ -1,0 +1,11 @@
+#wrapper {
+  background-image: url("../res/bg-1.png");
+  transition: background-image 1s ease-in-out;
+}
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+}

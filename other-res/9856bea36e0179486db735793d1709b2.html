@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../global-files/global.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>Netflix - Now Playing</title>
+</head>
+<body class="m-0 p-0 w-screen min-h-screen">
+  <div class="w-full bg-black relative h-screen z-50 flex justify-center items-center" id="wrapper/player">
+    <div class="absolute z-50 w-full h-full flex flex-col py-5 px-4 justify-between" id="video-controls">
+      <div class="w-full h-1/6" id="title-back">
+        <div id="back">
+          <button class="justify-center flex text-white" id="back-btn"><span class="material-icons-round text-4xl">
+            arrow_back
+          </span></button>
+        </div>
+      </div>
+      <div class="px-5" id="desc">
+        <h1 class="text-white font-semibold">You're now watching</h1>
+        <h1 class="text-white font-bold">My World</h1>
+        <p>For the girl i love the most, the girl that i found during her darkest days but despite of that situation i love her so much, i want to be with her thru ups and down no matter what happen it's me and her against the world.</p>
+      </div>
+      <div class="flex flex-row justify-between w-full h-1/6" id="misc">
+        <div class="flex justify-around w-2/5 items-center flex-row" id="left">
+          <div class="flex justify-center items-center" id="play-pause-btn">
+            <button class="" id="play">
+              <span class="text-white text-4xl material-icons-round">
+              play_arrow
+              </span>
+            </button>
+            <button class="hidden" id="pause">
+              <span class="text-white material-icons-round text-4xl">
+              pause
+              </span>
+            </button>
+          </div>
+          <div class="flex justify-around items-center" id="rew">
+            <button id="rew-btn" class="text-white"><span class="material-icons-round text-4xl">
+              replay_10
+            </span></button>
+          </div>
+          <div class="flex justify-center items-center" id="for">
+            <button id="for-btn" class="text-white"><span class="material-icons-round text-4xl">
+                forward_10
+              </span></button>
+          </div>
+          <div class="flex justify-center items-center" id="sound-lv">
+            <button class="text-white"><span class="material-icons-round text-4xl">
+              volume_up
+            </span></button>
+          </div>
+        </div>
+        
+        
+        <div class="flex flex-row justify-around items-center w-2/5 h-full" id="right">
+          <div class="" id="help">
+            <button class="text-white">
+              <span class="material-icons-round text-4xl">
+              help_outline
+              </span>
+            </button>
+          </div>
+          <div class="" id="next">
+            <button class="text-white"><span class="material-icons-round text-4xl">
+              skip_next
+            </span></button>
+          </div>
+          <div id="subs">
+            <button class="text-white">
+              <span class="material-icons-round text-4xl">
+              chat
+              </span></button>
+          </div>
+          <div id="full-s">
+            <button class="text-white">
+              <span class="material-icons-round text-4xl">
+                fullscreen
+              </span>
+            </button>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+    <video class="max-h-full" id="video-main" oncontextmenu="return false" src="../res/netflix-main.mp4"></video>
+  </div>
+  <script src="activity.js"></script>
+</body>
+</html>

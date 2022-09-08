@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="global.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="../global-files/global.css">
+  <script src="user-select.js"></script>
+  <title>select user</title>
+</head>
+<body class="bg-black m-0 p-0 w-full h-screen">
+  <audio id="clickSound" src="../res/click.mp3"></audio>
+  <div class="z-40 fixed flex items-center justify-center w-full h-full top-0 left-0 text-center opacity-1 bg-black" id="loader">
+    <img class="animate-spin w-5p" src="../res/loading.png" alt="loading...">
+  </div>
+  <div class="w-full h-full flex items-center justify-center flex-col" id="wrapper">
+    <div class="p-6 h-1/6 w-full" id="header">
+      <img class="h-full" oncontextmenu="return false" src="../res/netflix-logo-png-2.png" alt="logo">
+    </div>
+    <div class="h-5/6 w-full text-center" id="body">
+      <div class="h-1/5 w-full flex justify-center text-white font-bold" id="heading">
+        <h1 class="self-center">Who's watching?</h1>
+      </div>
+      <div class="flex flex-row h-3/5 w-full py-11 px-3.5 justify-around box-border" id="user-sec">
+        <div class="w-1/6 cursor-pointer flex flex-col center h-full" id="profile-1">
+          <img oncontextmenu="return false" src="../res/nf-avatar-1.png" class="self-center mh-80" alt="avatar-1-gaera">
+          <p class="text-white">daddy</p>
+        </div>
+        <div class="w-1/6 cursor-pointer flex-col flex center h-full" id="profile-2">
+          <img oncontextmenu="return false" id="image-2" src="../res/nf-avatar-2.png" class="self-center mh-80" alt="avatar-2-conisse">
+          <p id="label-2" class="text-white">mommy</p>
+        </div>
+        <div class="w-1/6 cursor-pointer flex flex-col h-full" id="profile-3">
+          <img oncontextmenu="return false" src="../res/nf-avatar-3.png" class="self-center mh-80" alt="avatar-3-enzo">
+          <p class="text-white">tita umi</p>
+        </div>
+        
+        <div class="w-1/6 cursor-pointer flex flex-col h-full" id="profile-4">
+          <img oncontextmenu="return false" src="../res/kids.jpg" class="self-center mh-80" alt="avatar-4-kids">
+          <p class="text-white">kids</p>
+        </div>
+        
+        <div class="w-1/6 cursor-pointer flex flex-col h-full" id="add-user">
+          <img src="../res/add.png" alt="add-button" class="self-center mh-80">
+          <p class="text-white">add account</p>
+        </div>
+      </div>
+      <div class="h-1/3 w-full flex justify-center align-center" id="button-sec">
+        <button class="h-fit w-fit uppercase p-3 box-content border-2 text-center text-white" id="manage-acc">manage account</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
